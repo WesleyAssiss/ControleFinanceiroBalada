@@ -1,7 +1,5 @@
 # ControleFinanceiroBalada
 
-Estrutura do App:
-
 ## Estrutura do App
 
 - ControleFinanceiroBalada/
