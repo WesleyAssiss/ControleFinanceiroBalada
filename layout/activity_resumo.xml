@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".repository.ResumoActivity"
+    android:padding="16dp"
+    android:background="@drawable/ic_launcher_background">
+
+ <!-- Adicione um novo TextView para exibir a data e hora -->
+ <TextView
+     android:id="@+id/dataHoraTxt"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     android:layout_marginTop="20dp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="18sp"
+     android:textColor="@android:color/black"
+     tools:text="Data e Hora"/>
+
+ <TextView
+     android:id="@+id/CaixaLabelTxt"
+     app:layout_constraintTop_toBottomOf="@id/dataHoraTxt"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     android:layout_marginTop="20dp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Total de Entradas"
+     android:textStyle="bold"
+     android:textSize="30sp"/>
+
+ <TextView
+     android:id="@+id/caixaTxt"
+     app:layout_constraintTop_toBottomOf="@id/CaixaLabelTxt"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     android:layout_width="300dp"
+     android:layout_height="wrap_content"
+     android:textSize="18sp"
+     android:hint="R$"
+     android:inputType="none"
+     android:paddingStart="135dp"
+     android:layout_marginTop="10dp"/>
+
+ <!-- Gasto -->
+
+ <TextView
+     android:id="@+id/GastoLabelTxt"
+     app:layout_constraintTop_toBottomOf="@id/caixaTxt"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     android:layout_marginTop="20dp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Total de Gastos"
+     android:textStyle="bold"
+     android:textSize="30sp"/>
+
+ <TextView
+     android:id="@+id/gastoTxt"
+     app:layout_constraintTop_toBottomOf="@id/GastoLabelTxt"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     android:layout_width="300dp"
+     android:layout_height="wrap_content"
+     android:textSize="18sp"
+     android:hint="R$"
+     android:paddingStart="135dp"
+     android:inputType="none"
+     android:layout_marginTop="10dp"/>
+
+ <!-- CAMPO Total -->
+
+ <TextView
+     android:id="@+id/TotalLabelTxt"
+     app:layout_constraintTop_toBottomOf="@id/gastoTxt"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     android:layout_marginTop="20dp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Dinheiro Disponível"
+     android:textStyle="bold"
+     android:textSize="30sp"/>
+
+ <TextView
+     android:id="@+id/totalTxt"
+     app:layout_constraintTop_toBottomOf="@id/TotalLabelTxt"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     android:layout_width="300dp"
+     android:layout_height="wrap_content"
+     android:textSize="18sp"
+     android:hint="R$"
+     android:paddingStart="135dp"
+     android:inputType="none"
+     android:layout_marginTop="10dp"/>
+
+
+ <TextView
+     android:id="@+id/entradasListTxt"
+     app:layout_constraintTop_toBottomOf="@id/totalTxt"
+     app:layout_constraintStart_toStartOf="parent"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textSize="18sp"
+     android:layout_marginTop="10dp"/>
+
+ <TextView
+     android:id="@+id/gastosListTxt"
+     app:layout_constraintTop_toBottomOf="@id/entradasListTxt"
+     app:layout_constraintStart_toStartOf="parent"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textSize="18sp"
+     android:layout_marginTop="10dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
