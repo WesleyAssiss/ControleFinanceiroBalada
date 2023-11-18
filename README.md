@@ -4,6 +4,7 @@ Estrutura do App:
 
 ControleFinanceiroBalada/
 |-- app/
+
 |   |-- manifest/
 |   |   |-- AndroidManifest.xml
 |   |-- java/
